@@ -38,6 +38,8 @@ DROP TABLE IF EXISTS ALLERGIES;
 DROP TABLE IF EXISTS PATIENT;
 DROP TABLE IF EXISTS USERS;
 DROP TABLE IF EXISTS ROLES;
+ 
+ -- Prova
 
 -- =====================================================
 -- STRONG ENTITIES
