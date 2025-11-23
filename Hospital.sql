@@ -2,7 +2,7 @@
 -- HOSPITAL DATABASE SCHEMA
 -- Normalization: 3NF | Soft Deletes | Audit Trails
 -- =====================================================
-show databases;
+show databases; 
 create database hospital;
 use hospital;
 -- Drop tables if exist (in reverse order of dependencies)
@@ -38,8 +38,6 @@ DROP TABLE IF EXISTS ALLERGIES;
 DROP TABLE IF EXISTS PATIENT;
 DROP TABLE IF EXISTS USERS;
 DROP TABLE IF EXISTS ROLES;
- 
- -- Prova
 
 -- =====================================================
 -- STRONG ENTITIES
@@ -636,7 +634,7 @@ INSERT INTO ROLES (role_name, description) VALUES
 -- =====================================================
 
 -- Set the current user for audit logs
-SET @current_user_id = 36;
+SET @current_user_id = 18;
 
 -- =====================================================
 -- 1. ROLES
@@ -662,7 +660,7 @@ INSERT INTO USERS (username, pass, email, role_id) VALUES
 ('admin_kate', '$2y$10$abcdefghijklmnopqrstuvwxyz123456', 'k.brown@hospital.com', 4),
 ('admin_michael', '$2y$10$abcdefghijklmnopqrstuvwxyz123456', 'm.davis@hospital.com', 4),
 -- Directors
-('dir_anderson', '$2y$10$abcdefghijklmnopqrstuvwxyz123456', 'r.anderson@hospital.com', 10);
+('dir_anderson', '$2y$10$abcdefghijklmnopqrstuvwxyz123456', 'r.anderson@hospital.com', 6);
 
 -- =====================================================
 -- 3. PATIENTS
